@@ -1,0 +1,16 @@
+{% extends 'news/base.html'%}
+
+{% block content %}
+
+<h2>List of Sources </h2>
+
+	<ul>
+	{% for feed in feeds %}
+		<li><a href="{{ feed.url }}">{{ feed.title }}</a> </li>
+	{% endfor %}
+	</ul>
+
+
+{% endblock %}
+
+

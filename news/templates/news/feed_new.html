@@ -1,0 +1,20 @@
+{% extends 'news/base.html'%}
+
+{% block content %}
+
+<h2>New Feed Form </h2>
+
+<form method="post">
+{% csrf_token %}
+<hr>
+{{ form.as_p }}
+<button type="submit">Save</button>
+
+</form>
+
+
+
+
+{% endblock %}
+
+

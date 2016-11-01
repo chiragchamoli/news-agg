@@ -1,0 +1,14 @@
+{% extends 'news/base.html'%}
+
+{% block content %}
+	<h2>List of Articles </h2>
+<ul style="list-style: none;">
+{% for article in articles %}
+	<li>
+		<h4><a href="{{ article.url }}">{{ article.title }}</a> </h4>
+		<p>{{ article.description | safe }}</p>
+
+	</li>
+{% endfor %}
+</ul>
+{% endblock %}

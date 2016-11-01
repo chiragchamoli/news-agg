@@ -1,0 +1,9 @@
+Install : pip install virtualenv
+Create a virtual env : virtualenv env
+source env/bin/activate
+Install 'pip install django'
+django-admin.py startproject newsproject .
+python manage.py migrate
+python manage.py startapp news
+py manage.py makemigrations news
+python manage.py createsuperuser
